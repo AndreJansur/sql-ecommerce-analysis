@@ -25,11 +25,18 @@ screens/RFM.png                # приклад: RFM-сегментація
 - **Pareto:** внесок топ-клієнтів, частка топ-5 товарів у виручці.
 
 ## 🖼️ Візуальні приклади
-[![Customer Analytics](screens/Segmentation.png)](screens/Segmentation.png?raw=1)
-[![Top Products](screens/Products.png)](screens/Products.png?raw=1)
-[![Cohort Analysis](screens/Cohort_Analysis.png)](screens/Cohort_Analysis.png?raw=1)
-[![RFM Heatmap](screens/RFM.png)](screens/RFM.png?raw=1)
 
+**Сегментація клієнтів (Small / Medium / Large)**
+[![Customer Analytics](screens/Segmentation.png)](screens/Segmentation.png?raw=1)
+
+**Топ-10 товарів за виручкою**
+[![Top Products](screens/Products.png)](screens/Products.png?raw=1)
+
+**Когортний аналіз retention**
+[![Cohort Analysis](screens/Cohort_Analysis.png)](screens/Cohort_Analysis.png?raw=1)
+
+**RFM Heatmap (Recency / Frequency / Monetary)**
+[![RFM Heatmap](screens/RFM.png)](screens/RFM.png?raw=1)
 
 ## ▶️ Як повторити локально
 - Виконати `sql/e-commerce.sql` крок за кроком (всі блоки від 01 до 12).
