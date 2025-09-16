@@ -1,3 +1,33 @@
+/*
+==========================================================
+ SQL Project: E-commerce Data Analysis
+ Автор: [AndreJansur]
+ Опис: повний пайплайн аналізу e-commerce даних 
+       — від дослідження сирих таблиць до бізнес-метрик.
+
+ Структура (оглавлення):
+ 01. Data exploration         — базове дослідження даних (розмір, пропуски, аномалії)
+ 02. Data cleaning            — створення retail_cleaned (фільтрація помилок, повернень)
+ 03. Monthly sales analysis   — тренди місячної виручки та кількості замовлень
+ 04. Customer summary         — профіль клієнтів (замовлення, дохід, середній чек)
+ 05. Top products             — топ-10 товарів за виручкою та кількістю
+ 06. Daily revenue by country — денна виручка по країнах + кумулятивний тренд
+ 07. Customer segmentation    — Small / Medium / Large за витратами
+ 08. RFM analysis             — Recency / Frequency / Monetary + сегменти
+ 09. Frequency analysis       — середній інтервал покупок (Frequent / Occasional / Rare)
+ 10. Cohort retention         — когортний аналіз (утримання по місяцях)
+ 11. Retention pivot          — півот-таблиця retention
+ 12. Pareto & top products    — внесок топ-20% клієнтів, топ-5 товарів, сегменти
+
+ Примітка:
+ - Виконувати блоки по черзі, починаючи з 01 → 12.
+ - Усі запити працюють у PostgreSQL.
+==========================================================
+*/
+
+
+
+
 --01. Data exploration — initial data exploration
 --Task: understand the scope of the table, the presence of gaps and anomalies.
 
@@ -492,6 +522,7 @@ segment
 from segmentation
 group by segment
 order by revenue_share desc;
+
 
 
 
